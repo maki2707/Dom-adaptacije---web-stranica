@@ -49,7 +49,7 @@ body {
 	height: 100vh;
 	scroll-snap-align: start;
 	display: flex;
-
+	margin-top: 5vh;
 	color: #fff;
 	background-color: var(--dark-grey);
 }
@@ -208,6 +208,16 @@ body {
 }
 
 @media (max-width: 768px) {
+	.section {
+		height: 95vh;
+		scroll-snap-align: start;
+		display: flex;
+		flex-direction: column;
+		font-size: 24px;
+		color: #fff;
+		background-color: #fff;
+	}
+
 	.title_1 {
 		font-size: 4rem;
 	}
@@ -263,6 +273,7 @@ body {
 		background-repeat: no-repeat;
 		display: flex;
 		flex-direction: column;
+		padding-top: 10vh;
 	}
 
 	.title_1 {
@@ -300,5 +311,19 @@ body {
 	.mobile-landing-image {
 		display: block;
 		height: 40vh;
+	}
+
+	.heading3-button-container {
+		background-color: #fff;
+	}
+
+	.button-more {
+		width: 10rem;
+		font-size: 16px;
+	}
+
+	.button-query {
+		width: 10rem;
+		font-size: 16px;
 	}
 }
