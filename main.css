@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+	--dark-grey: #363636;
+	--red: #ff4b4b;
+	--green: rgb(27, 155, 72);
+}
+
+.bold-red {
+	color: var(--red);
+	font-weight: 600;
+}
+
+.bold-green {
+	color: var(--green);
+	font-weight: 600;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: "Rubik", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.scroll-container {
+	height: 100vh;
+	-webkit-overflow-scrolling: touch;
+}
+
+.section {
+	height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+	background-color: #fff;
+}
+.section2 {
+	height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+
+	color: #fff;
+	background-color: var(--dark-grey);
+}
+
+.section > div {
+	text-align: center;
+}
+
+.image-section {
+	background-image: url("/assets/landing3.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	border-right: 2px solid white;
+	justify-content: center;
+	align-items: center;
+}
+
+.title_1 {
+	font-size: 5rem;
+	font-weight: 600;
+	color: var(--dark-grey);
+	border-radius: 2rem;
+}
+
+.title_2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: var(--dark-grey);
+	border-radius: 1rem;
+	border-bottom: var(--red) 4px solid;
+}
+
+.blur-background {
+	width: 100%;
+	height: 14rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	box-shadow: inset 0 0 2px 2px white;
+}
+
+.text-container {
+	text-align: center;
+}
+
+.landingpage-right-container {
+	width: 100%;
+	height: 100vh;
+	padding-top: 15vh;
+	text-align: center;
+}
+
+.textbox-1 {
+	border: 2px solid white;
+	padding: 2rem;
+	border-radius: 10px;
+	width: 80%;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+	color: var(--dark-grey);
+	font-size: 1.7rem;
+	font-weight: 400;
+	background: rgba(255, 112, 112, 0.25);
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	border-radius: 10px;
+}
+
+.heading3-button-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 3rem;
+}
+
+.button-more {
+	width: 12rem;
+	border: var(--red) 2px solid;
+	border-radius: 10px;
+	font-family: "Rubik", sans-serif;
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: var(--red);
+	line-height: 2rem;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.button-query {
+	width: 12rem;
+	border: var(--red) 2px solid;
+	border-radius: 10px;
+	font-family: "Rubik", sans-serif;
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background-color: var(--red);
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+}
+
+.button-query:hover {
+	background-color: #fff;
+	color: var(--red);
+}
+
+.button-more:hover {
+	background-color: var(--red);
+	color: #fff;
+}
+
+.more-info-box1 {
+	height: 20vh;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--red);
+	border-radius: 1rem;
+	padding: 2rem;
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: justify;
+	line-height: 2rem;
+}
+
+.answer1 {
+	font-size: 1.5rem;
+}
+
+.question-outer-box {
+	margin-top: 1vh;
+	height: 25vh;
+	padding: 0.5rem;
+	width: 80%;
+	border-radius: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+}
+
+@media (max-width: 768px) {
+	.title_1 {
+		font-size: 4rem;
+	}
+
+	.title_2 {
+		font-size: 2rem;
+	}
+
+	.blur-background {
+		height: 10vh;
+		padding: 1rem;
+	}
+
+	.image-section {
+		background-size: cover;
+		background-position: center;
+		height: 50vh;
+		width: 100%;
+		padding: 50px 0;
+	}
+
+	.more-info-box1 {
+		height: 100%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: var(--red);
+		border-radius: 5px;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: justify;
+		line-height: 18px;
+	}
+
+	.answer1 {
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.question-outer-box {
+		height: min-content;
+		padding: 0;
+		padding-top: 1vh;
+		padding-left: 1vh;
+		width: 80%;
+		border-radius: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #fff;
+	}
+}
