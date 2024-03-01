@@ -54,10 +54,6 @@ body {
 	background-color: var(--dark-grey);
 }
 
-.section > div {
-	text-align: center;
-}
-
 .image-section {
 	background-image: url("/assets/landing3.png");
 	background-size: auto;
@@ -207,6 +203,10 @@ body {
 	background-color: #fff;
 }
 
+.mobile-landing-image {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	.title_1 {
 		font-size: 4rem;
@@ -257,5 +257,48 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 		background-color: #fff;
+	}
+	.landingpage-right-container {
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title_1 {
+		font-size: 32px;
+	}
+
+	.title_2 {
+		font-size: 20px;
+	}
+
+	.textbox-1 {
+		font-size: 16px;
+		margin-top: -20px;
+	}
+
+	.image-section {
+		background-image: none;
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		border-right: 2px solid white;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}
+
+	.text-container {
+		width: 100vw;
+	}
+
+	.mobile-landing-image {
+		display: block;
+		height: 40vh;
 	}
 }
