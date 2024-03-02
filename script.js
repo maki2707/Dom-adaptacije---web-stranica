@@ -36,3 +36,41 @@ let rotateText = () => {
 };
 rotateText();
 setInterval(rotateText, 4000);
+
+function uncheckMenuBtn() {
+	setTimeout(function () {
+		document.getElementById("menuBtn").checked = false;
+	}, 1000); // 1000ms = 1 second
+}
+
+// Add an onclick event listener to all nav ul li a elements
+var navLinks = document.querySelectorAll("nav ul li a");
+for (var i = 0; i < navLinks.length; i++) {
+	navLinks[i].addEventListener("click", uncheckMenuBtn);
+}
+
+let openAnswer = null;
+
+const accordionLinks = document.querySelectorAll(".accordion-link");
+
+accordionLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		const answer = link.nextElementSibling;
+
+		if (answer !== openAnswer) {
+			// close the currently open answer, if any
+			if (openAnswer) {
+				openAnswer.classList.add("collapsed");
+			}
+			// open the clicked answer
+			answer.classList.remove("collapsed");
+			// set the clicked answer as the currently open answer
+			openAnswer = answer;
+		} else {
+			// toggle the clicked answer
+			answer.classList.toggle("collapsed");
+			// clear the currently open answer variable
+			openAnswer = answer.classList.contains("collapsed") ? null : answer;
+		}
+	});
+});

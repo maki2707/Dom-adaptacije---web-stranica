@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+section {
+	height: fit-content;
+	width: 100%;
+
+	place-items: center;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+
+	box-sizing: border-box;
+}
+.column {
+	width: 100%;
+	padding: 0 1em 1em 1em;
+	text-align: center;
+
+	box-sizing: border-box;
+}
+.card {
+	width: 100%;
+	height: 100%;
+	padding: 2em 1.5em;
+	background: linear-gradient(#ffffff 50%, #ff4b4b 50%);
+	background-size: 100% 200%;
+	background-position: 0 2.5%;
+	border-radius: 5px;
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+	transition: 0.5s;
+
+	box-sizing: border-box;
+}
+.card h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 1em 0;
+	box-sizing: border-box;
+}
+.card p {
+	font-size: 1rem;
+	text-align: justify;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+	box-sizing: border-box;
+}
+.icon-wrapper {
+	background-color: #ff4b4b;
+	position: relative;
+	margin: auto;
+	font-size: 30px;
+	height: 2.5em;
+	width: 2.5em;
+	color: #ffffff;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	transition: 0.5s;
+
+	box-sizing: border-box;
+}
+.card:hover {
+	background-position: 0 100%;
+
+	box-sizing: border-box;
+}
+.card:hover .icon-wrapper {
+	background-color: #ffffff;
+	color: #ff4b4b;
+
+	box-sizing: border-box;
+}
+.card:hover h3 {
+	color: #ffffff;
+
+	box-sizing: border-box;
+}
+.card:hover p {
+	color: #f0f0f0;
+
+	box-sizing: border-box;
+}
+
+.services-title {
+	font-size: 3rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.services-subtitle {
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 2vw;
+}
+@media screen and (min-width: 768px) {
+	section {
+		padding: 0 2em;
+		box-sizing: border-box;
+	}
+	.column {
+		flex: 0 50%;
+		max-width: 50%;
+		box-sizing: border-box;
+	}
+}
+@media screen and (min-width: 992px) {
+	section {
+		padding: 1em 3em;
+
+		box-sizing: border-box;
+	}
+	.column {
+		flex: 0 50%;
+		max-width: 50%;
+
+		box-sizing: border-box;
+	}
+}
