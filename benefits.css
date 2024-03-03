@@ -1,0 +1,99 @@
+.svc-container {
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1vw;
+	padding-left: 5vh;
+	padding-right: 5vh;
+	background-color: #363636;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.benefits {
+	background-color: #363636;
+	text-align: center;
+}
+
+.svc-container-title {
+	font-size: 3rem;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.svc-container-subtitle {
+	font-size: 1.5rem;
+}
+
+.svc-container .svc-card {
+	position: relative;
+	cursor: pointer;
+}
+
+.svc-container .svc-card .svc-face {
+	width: 25vw;
+	height: 20vh;
+	transition: 0.5s;
+}
+
+.svc-container .svc-card .svc-face.svc-face1 {
+	position: relative;
+	background: #363636;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(10vh);
+}
+
+.svc-container .svc-card:hover .svc-face.svc-face1 {
+	background: #ff4b4b;
+	transform: translateY(0);
+}
+
+.svc-container .svc-card .svc-face.svc-face1 .svc-content {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.svc-container .svc-card:hover .svc-face.svc-face1 .svc-content {
+	opacity: 1;
+}
+
+.svc-container .svc-card .svc-face.svc-face1 .svc-content h3 {
+	margin: 10px 0 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.svc-container .svc-card .svc-face.svc-face2 {
+	position: relative;
+	background: #fff;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+	transform: translateY(-10vh);
+}
+
+.svc-container .svc-card:hover .svc-face.svc-face2 {
+	transform: translateY(0);
+}
+
+.svc-container .svc-card .svc-face.svc-face2 .svc-content p {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	font-size: 1.1rem;
+}

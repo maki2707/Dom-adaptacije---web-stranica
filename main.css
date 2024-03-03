@@ -48,6 +48,10 @@ body {
 	background-color: #fff;
 }
 
+#contacts {
+	background-color: var(--red);
+}
+
 .section2 {
 	height: fit-content;
 	scroll-snap-align: start;
@@ -490,9 +494,99 @@ body {
 	border: 1px solid #333;
 }
 
+.kontakti {
+	color: #fff;
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.kontakti-podaci {
+	font-weight: 400;
+	font-size: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: white;
+	width: fit-content;
+	font-family: "Rubik", sans-serif;
+	column-gap: 2rem;
+}
+
+.potpis {
+	color: rgb(255, 255, 255);
+	font-family: "Rubik", sans-serif;
+	font-weight: 100;
+	font-size: 0.75rem;
+	margin-left: auto;
+	width: 20%;
+	font-style: italic;
+}
+
 .benefits-container .card .face.face2 .content a:hover {
 	background: #333;
 	color: #fff;
+}
+
+.query {
+	background-color: var(--red);
+}
+
+.form-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #fff;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	padding-bottom: 1rem;
+	margin-bottom: 5px;
+	padding-top: 1rem;
+}
+.checkradioInput {
+	display: flex;
+	gap: 1rem;
+	border-bottom: 1px #000 solid;
+}
+
+.single-input {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	color: #000;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	width: 75%;
+}
+
+.single-input input {
+	transition: transform 0.3s ease;
+}
+
+.single-input input:focus {
+	transform: scale(1.05);
+}
+
+.text-input {
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 2;
+	border: #000 1px solid;
+	border-radius: 10px;
+	padding-left: 1rem;
+	margin-bottom: 5px;
+}
+
+.input-option {
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -650,13 +744,10 @@ body {
 	}
 }
 .more-info-box1 {
-	transition: transform 0.5s ease-in-out; /* 0.5s is the duration, adjust as needed */
-	padding-right: 20px; /* Ensure there's some padding for the text */
+	transition: transform 0.5s ease-in-out;
+	padding-right: 20px;
 }
 
-/* Slide the answer1 div to the left on hover */
 .more-info-box1:hover {
-	transform: translateX(
-		-3vw
-	); /* Adjust the value to control the sliding distance */
+	transform: translateX(-3vw);
 }
